@@ -11,7 +11,7 @@ import Album from "./pages/Album";
 import UangKas from "./pages/UangKas";
 import Jadwal from "./pages/Jadwal";
 import Profil from "./pages/Profil";
-import Threads from "./components/Threads";
+import Background from "./components/Background";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -36,7 +36,7 @@ function App() {
           position: "absolute",
         }}
       >
-        <Threads amplitude={3} distance={0} enableMouseInteraction={true} />
+        <Background amplitude={3} distance={0} enableMouseInteraction={true} />
       </div>
       <Header />
       <Footer />
