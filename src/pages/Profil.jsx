@@ -2,7 +2,7 @@ import "../styles/Profil.css"
 
 const Profil = () => {
     return(
-        Profil
+        <h1>Profil</h1>
     );
 }
  

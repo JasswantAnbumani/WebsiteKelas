@@ -2,7 +2,7 @@ import "../styles/Album.css"
 
 const Album = () => {
     return(
-        Album
+        <h1>Album</h1>
     );
 }
  

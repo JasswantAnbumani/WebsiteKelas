@@ -2,7 +2,7 @@ import "../styles/Home.css"
 
 const Home = () => {
     return(
-        Home
+        <h1>Home</h1>
     );
 }
 export default Home;
