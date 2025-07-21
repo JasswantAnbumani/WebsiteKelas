@@ -36,7 +36,7 @@ function App() {
           position: "absolute",
         }}
       >
-        // <Background amplitude={3} distance={0} enableMouseInteraction={true} /> 
+      {/*<Background amplitude={3} distance={0} enableMouseInteraction={true} /> */}
       </div>
       <Header />
       <Footer />
