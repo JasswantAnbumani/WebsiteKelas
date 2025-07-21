@@ -1,14 +1,15 @@
 import React from 'react';
 import '../styles/AboutUs.css';
 import { FaGithub, FaInstagram } from 'react-icons/fa';
+import ifdsiang from "/ifdsiang.jpg";
 
 const AboutUs = () => {
   const teamMembers = [
-    { name: 'Jasswant Anbumani' },
-    { name: 'Natanael Sibagariang' },
-    { name: 'Kidroni Harahap' },
-    { name: 'Salma Monia' },
-    { name: 'Inggid Salfadia' }
+    { name: 'Jasswant Anbumani', github: 'https://github.com/JasswantAnbumani', instagram: '#' },
+    { name: 'Natanael Sibagariang', github: 'https://github.com/nael524', instagram: '#' },
+    { name: 'Kidroni Harahap', github: 'https://github.com/Ronihrp', instagram: '#' },
+    { name: 'Salma Monia', github: 'https://github.com/salmamonia', instagram: '#' },
+    { name: 'Inggid Salfadia', github: 'https://github.com/Inggidsalfadia', instagram: '#' }
   ];
 
   return (
@@ -25,7 +26,7 @@ const AboutUs = () => {
           </p>
         </div>
         <img
-          src="https://img.freepik.com/free-photo/happy-young-man-standing-isolated_171337-21060.jpg"
+          src={ifdsiang}
           alt="Mahasiswa"
           className="about-image"
         />
@@ -40,6 +41,7 @@ const AboutUs = () => {
         ))}
       </div>
 
+      {/* TEAM SECTION */}
       <section className="team-section">
         <h2>Our Team Project</h2>
         <p>
@@ -55,10 +57,14 @@ const AboutUs = () => {
         {teamMembers.map((member, index) => (
           <div key={index} className="team-card">
             <div className="image-box">GAMBAR {index + 1}</div>
-            <p className='tengah'>{member.name}</p>
+            <p className="tengah">{member.name}</p>
             <div className="icons">
-              <i className="fab fa-instagram"><FaInstagram /></i>
-              <i className="fab fa-github"><FaGithub /></i>
+              <a href={member.instagram} target="_blank" rel="noopener noreferrer">
+                <FaInstagram />
+              </a>
+              <a href={member.github} target="_blank" rel="noopener noreferrer">
+                <FaGithub />
+              </a>
             </div>
           </div>
         ))}
