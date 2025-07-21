@@ -1,20 +1,19 @@
 import React from 'react';
 import '../styles/AboutUs.css';
 import { FaGithub, FaInstagram } from 'react-icons/fa';
-import ifdsiang from "/ifdsiang.jpg";
+import ifdsiang from "/logo/ifdsiang.jpg";
 
 const AboutUs = () => {
   const teamMembers = [
-    { name: 'Jasswant Anbumani', github: 'https://github.com/JasswantAnbumani', instagram: '#' },
-    { name: 'Natanael Sibagariang', github: 'https://github.com/nael524', instagram: '#' },
-    { name: 'Kidroni Harahap', github: 'https://github.com/Ronihrp', instagram: '#' },
-    { name: 'Salma Monia', github: 'https://github.com/salmamonia', instagram: '#' },
-    { name: 'Inggid Salfadia', github: 'https://github.com/Inggidsalfadia', instagram: '#' }
+    { name: 'Jasswant Anbumani', github: 'https://github.com/JasswantAnbumani', instagram: 'https://www.instagram.com/jassnotsillynomore/' },
+    { name: 'Natanael Sibagariang', github: 'https://github.com/nael524', instagram: 'https://www.instagram.com/naellsbagrianggg/' },
+    { name: 'Kidroni Harahap', github: 'https://github.com/Ronihrp', instagram: 'https://www.instagram.com/rhrhp_hrp/' },
+    { name: 'Salma Monia', github: 'https://github.com/salmamonia', instagram: 'https://www.instagram.com/niania_1107/' },
+    { name: 'Inggid Salfadia', github: 'https://github.com/Inggidsalfadia', instagram: 'https://www.instagram.com/slf_dya/' }
   ];
 
   return (
     <div className="container">
-      {/* ABOUT US */}
       <section className="about-section">
         <div className="about-text">
           <h1>ABOUT US</h1>
