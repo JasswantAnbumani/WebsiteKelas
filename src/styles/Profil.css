@@ -69,6 +69,17 @@
   width: 100%;
 }
 
+.scroll-container {
+  overflow-x: scroll;         
+  scrollbar-width: none;      
+  -ms-overflow-style: none; 
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;             
+}
+
+
 .scroll-btn {
   background: none;
   border: none;
