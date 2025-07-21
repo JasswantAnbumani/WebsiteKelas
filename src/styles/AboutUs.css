@@ -1,0 +1,70 @@
+/* AboutUs.css */
+
+.container {
+  background-color: #000000;
+  padding: 2rem;
+  font-family: sans-serif;
+}
+
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+}
+
+.about-text {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.about-image {
+  width: 200px;
+  border-radius: 10px;
+}
+
+.image-row {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 4rem;
+}
+
+.image-box {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  border-radius: 10px;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.team-section {
+  text-align:center;
+  margin-bottom: 2rem;
+  max-width: 800px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.team-grid {
+  display: flex;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.team-card p {
+  min-height: 2.5em;
+  margin-bottom: 0.5rem;
+}
+
+.icons {
+  font-size: 1.2rem;
+  margin-top: 0.3rem;
+}
+
+.icons i {
+  margin: 0 8px;
+}
