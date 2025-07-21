@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/AboutUs.css';
 import { FaGithub, FaInstagram } from 'react-icons/fa';
-import ifdsiang from "/logo/ifdsiang.jpg";
+import ifdsiang from "../assets/logo/ifdsiang.jpg";
 
 const AboutUs = () => {
   const teamMembers = [
@@ -30,8 +30,6 @@ const AboutUs = () => {
           className="about-image"
         />
       </section>
-
-      {/* GAMBAR 1 - 4 */}
       <div className="image-row">
         {[1, 2, 3, 4].map((num) => (
           <div key={num} className="image-box">
@@ -40,7 +38,6 @@ const AboutUs = () => {
         ))}
       </div>
 
-      {/* TEAM SECTION */}
       <section className="team-section">
         <h2>Our Team Project</h2>
         <p>
@@ -51,7 +48,6 @@ const AboutUs = () => {
         </p>
       </section>
 
-      {/* TIM */}
       <div className="team-grid">
         {teamMembers.map((member, index) => (
           <div key={index} className="team-card">

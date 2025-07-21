@@ -20,7 +20,16 @@
   font-weight: bold;
   font-size: 20px;
   align-content: center;
+  size: 10px;
 }
+
+.logo-img {
+  height: 55px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
 
 .nav-menu {
   display: flex;
