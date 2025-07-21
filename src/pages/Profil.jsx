@@ -51,7 +51,7 @@ const Profil = () => {
           <FaChevronCircleLeft size={32} />
         </button>
 
-        <div className="anggota-wrapper-2baris" ref={anggotaRef}>
+        <div className="anggota-wrapper-2baris scroll-container" ref={anggotaRef}>
           {anggotaKelas.map((item, index) => (
             <div key={index} className="anggota-card">
               <img src={item.foto} alt={item.nama} className="profil-img" />
