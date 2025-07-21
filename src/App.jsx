@@ -18,16 +18,14 @@ function App() {
 
   return (
     <>
-      <Router>
-        <Routes>
+      <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/profil" element={<Profil />} />
           <Route path="/uangKas" element={<UangKas />} />
           <Route path="/album" element={<Album />} />
           <Route path="/jadwal" element={<Jadwal />} />
-        </Routes>
-      </Router>
+      </Routes>
       <div
         style={{
           width: "50%",

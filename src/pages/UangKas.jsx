@@ -2,7 +2,7 @@ import "../styles/UangKas.css"
 
 const UangKas = () => {
     return(
-        UangKas
+        <h1>Uang Kas</h1>
     );
 }
  

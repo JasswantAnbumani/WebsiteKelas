@@ -2,7 +2,7 @@ import "../styles/Jadwal.css"
 
 const Jadwal = () => {
     return(
-        Jadwal
+        <h1>Jadwal</h1>
     );
 }
  

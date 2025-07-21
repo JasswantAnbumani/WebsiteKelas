@@ -2,7 +2,7 @@ import "../styles/AboutUs.css"
 
 const AboutUs = () => {
     return(
-        AboutUs
+        <h1>AboutUs</h1>
     );
 }
  
