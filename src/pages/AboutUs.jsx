@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/AboutUs.css';
 import { FaGithub, FaInstagram } from 'react-icons/fa';
 import ifdsiang from "../assets/logo/ifdsiang.jpg";
+import FadeSlideUp from "../components/animations/FadeSlideUp";
 
 const AboutUs = () => {
   const teamMembers = [
@@ -16,29 +17,28 @@ const AboutUs = () => {
     <div className="container">
       <section className="about-section">
         <div className="about-text">
-          <h1>ABOUT US</h1>
+          <FadeSlideUp delay={0.1}>
+          <h1>ABOUT US</h1></FadeSlideUp>
+          <FadeSlideUp delay={0.9}>
           <p>
             Kami adalah mahasiswa Teknik Informatika Universitas Satya Terra Bhinneka – pembelajar, penjelajah teknologi, dan pencipta solusi digital masa depan.
             Di tengah pesatnya perkembangan teknologi informasi, kami hadir sebagai generasi yang siap menjawab tantangan era digital dengan kreativitas, inovasi, dan semangat kolaboratif.
             Dibekali kurikulum berbasis industri dan semangat “Unity in Diversity”, kami tidak hanya fokus pada teori, tapi juga aktif mengembangkan proyek nyata:
             dari pengembangan aplikasi, AI, keamanan siber, hingga startup berbasis teknologi. Di ruang kelas, laboratorium, dan dunia maya, kami terus belajar dan berkarya.
-          </p>
+          </p></FadeSlideUp>
+          
         </div>
-        <img
-          src={ifdsiang}
-          alt="Mahasiswa"
-          className="about-image"
-        />
       </section>
-      <div className="image-row">
+      <FadeSlideUp delay={1.5}>
+        <div className="image-row">
         {[1, 2, 3, 4].map((num) => (
           <div key={num} className="image-box">
             GAMBAR {num}
           </div>
         ))}
-      </div>
+      </div></FadeSlideUp>
 
-      <section className="team-section">
+      <FadeSlideUp delay={1.999999999999999}><section className="team-section">
         <h2>Our Team Project</h2>
         <p>
           Halo dan selamat datang! Ini adalah ruang di mana kolaborasi bertemu dengan kreativitas.
@@ -46,9 +46,9 @@ const AboutUs = () => {
           Setiap bagian dari proyek ini mencerminkan kerja sama tim, inovasi, dan visi yang kami bagikan bersama.
           Silakan jelajahi — dan lihat apa yang telah kami bangun bersama.
         </p>
-      </section>
+      </section></FadeSlideUp>
 
-      <div className="team-grid">
+      <FadeSlideUp delay={2.5}><div className="team-grid">
         {teamMembers.map((member, index) => (
           <div key={index} className="team-card">
             <div className="image-box">GAMBAR {index + 1}</div>
@@ -63,7 +63,7 @@ const AboutUs = () => {
             </div>
           </div>
         ))}
-      </div>
+      </div></FadeSlideUp>
     </div>
   );
 };
