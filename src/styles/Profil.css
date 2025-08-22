@@ -4,7 +4,8 @@
   color: white;
   min-height: 100vh;
   font-family: sans-serif;
-  margin-right: 80px;
+  margin-right: 80px; 
+   overflow-x: hidden; 
 }
 
 .profil-title {
@@ -38,6 +39,7 @@
   max-width: 120px;
   box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
   transition: transform 0.3s ease;
+  margin:0;
 }
 
 .perangkat-card:hover,
@@ -57,18 +59,24 @@
   position: relative;
   display: flex;
   align-items: center;
+  overflow-x: hidden;   /* potong area kosong di kanan */
 }
+
 
 .anggota-wrapper-2baris {
   display: grid;
   grid-auto-flow: column;
+  grid-auto-columns: max-content;
   grid-template-rows: repeat(2, auto);
   gap: 1rem;
-  overflow-x: auto;
   scroll-behavior: smooth;
-  padding: 1rem 2rem;
-  width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
+
+
 
 .scroll-container {
   overflow-x: scroll;         

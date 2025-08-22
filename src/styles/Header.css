@@ -1,6 +1,6 @@
 .header-container {
   background-color: transparent;
-  padding: 15px 40px;
+  padding: 0px 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -13,6 +13,8 @@
   top: 0;
   left: 0;
   z-index: 1000;
+  backdrop-filter: blur(10px);
+  
 }
 
 
@@ -21,6 +23,7 @@
   font-size: 20px;
   align-content: center;
   size: 10px;
+  z-index: 99;
 }
 
 .logo-img {
@@ -42,6 +45,7 @@
   color: rgb(255, 255, 255);
   font-weight: 500;
   transition: color 0.2s ease;
+  
 }
 
 .nav-menu a::after {

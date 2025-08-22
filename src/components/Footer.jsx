@@ -3,10 +3,16 @@ import "../styles/Footer.css";
 import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import logoFooter from "../assets/logo/logoFooter.png";
+import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
-    <footer className="footer-container">
+    <motion.footer
+      initial={{ y: 80, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      className="footer-container"
+    >
       <div className="footer-left">
         <span className="footer-logo">
           <img src={logoFooter} alt="Footer Logo" className="footer-logo-img" />
@@ -39,7 +45,7 @@ const Footer = () => {
         </div>
         <p className="footer-text">2025© IF D Siang, All Rights Reserved ©</p>
       </div>
-    </footer>
+    </motion.footer>
   );
 };
 

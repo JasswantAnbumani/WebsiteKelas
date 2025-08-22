@@ -1,0 +1,423 @@
+.uang-kas-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: transparent;
+}
+@media (width> 520px) {
+  .uang-kas-container {
+    padding: 20px;
+    margin-left: 100px;
+    font-family: Arial, sans-serif;
+    background-color: transparent;
+  }
+}
+
+.judul {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.login-bendahara {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-bendahara input {
+  padding: 8px;
+  margin: 0 10px;
+}
+
+.login-bendahara button {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.json-opsi {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.json-opsi button {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.rekap-table-container {
+  overflow-x: auto;
+}
+
+.tabel-rekap {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 1000px;
+  border-radius: 10px;
+}
+
+.tabel-rekap th,
+.tabel-rekap td {
+  border: 1px solid #ffffff;
+  padding: 8px;
+  text-align: left;
+}
+
+.tabel-rekap th {
+  background-color: #444;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.cell {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-size: 18px;
+}
+
+.cell:hover {
+  background-color: #444;
+  color: black;
+}
+
+.cell.sudah {
+  color: green;
+  font-weight: bold;
+  text-align: center;
+}
+
+.cell.belum {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
+
+.cell.pending {
+  color: orange;
+  font-weight: bold;
+  animation: blink 0.5s step-end infinite alternate;
+  text-align: center;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0.3;
+  }
+}
+
+.pengeluaran-form {
+  background-color: transparent;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+}
+
+.pengeluaran-form h2 {
+  margin-bottom: 15px;
+  text-align: center;
+  color: white;
+}
+
+.pengeluaran-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* kasih jarak antar input */
+  transition: ease-in-out 0.3s;
+}
+
+.pengeluaran-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+}
+
+.pengeluaran-form input:focus {
+  border-color: #ffffff;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+.pengeluaran-form button {
+  padding: 10px;
+  background: white;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.pengeluaran-form button:hover {
+  background: #444;
+  color: white;
+}
+
+.total-row td {
+  background-color: #444;
+  font-weight: bold;
+}
+
+.konfirmasi-popup {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 15px 25px;
+  border: 1px solid #ccc;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateX(-50%) translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+}
+
+.konfirmasi-popup button {
+  padding: 6px 12px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.total-keseluruhan {
+  margin-top: 20px;
+  padding: 15px 20px;
+  background: #444;
+  border-left: 6px solid #686767;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  text-align: right;
+}
+
+.total-keseluruhan.pulse {
+  animation: scalePop 0.4s ease-out;
+}
+
+@keyframes scalePop {
+  0% {
+    transform: translateY(-10px);
+
+  }
+  25% {
+    transform: translateY(-15px);
+
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  75% {
+    transform: translateY(0px);
+  }
+  100% {
+
+  }
+}
+
+/* Styling daftar pengeluaran */
+.pengeluaran-list {
+  margin-left: 9px;
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  background: #444; /* warna netral */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.pengeluaran-list h2 {
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff; /* merah lembut biar sesuai tema "pengeluaran" */
+}
+
+.pengeluaran-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pengeluaran-list li {
+  padding-left: 42%;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 0.95rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pengeluaran-list li:last-child {
+  border-bottom: none;
+}
+
+.icon {
+  padding-top: 3px;
+  color: white;
+  font-size: 30px;
+  transition: 0.1s ease-in;
+}
+.icon:hover {
+  padding-top: 3px;
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+}
+/* ================= Responsive (≤520px) ================= */
+@media (max-width: 520px) {
+  .uang-kas-container {
+    padding: 10px;
+    background-color: transparent;
+  }
+  .pengeluaran-list {
+    padding: 10px;
+  }
+
+  .pengeluaran-list li {
+    font-size: 0.85rem;
+    padding: 8px 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    padding-left: 26.5%;
+  }
+
+  .judul {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  /* Login Bendahara */
+  .login-bendahara {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 15px;
+  }
+
+  .login-bendahara button {
+    margin-left: 40px;
+    width: 80%;
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+  .login-bendahara input {
+    margin-left: 25px;
+    width: 80%;
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+  /* Opsi JSON */
+  .json-opsi {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .json-opsi button {
+    width: 100%;
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  /* Tabel */
+  .rekap-table-container {
+    overflow-x: auto;
+  }
+
+  .tabel-rekap {
+    font-size: 12px;
+    min-width: 700px; /* masih bisa scroll horizontal */
+  }
+
+  .tabel-rekap th,
+  .tabel-rekap td {
+    padding: 6px;
+  }
+
+  .cell {
+    font-size: 14px;
+  }
+
+  /* Form Pengeluaran */
+  .pengeluaran-form {
+    max-width: 100%;
+    padding-right: 200px;
+    margin-right: 0px;
+    padding-left: 8px;
+    padding-right: 16px;
+  }
+
+  .pengeluaran-form input,
+  .pengeluaran-form button {
+    width: 100%;
+    font-size: 14px;
+    padding: 8px;
+    background-color: #444;
+  }
+
+  .pengeluaran-form button {
+    margin-left: 8px;
+    width: 100%;
+    font-size: 14px;
+    color: black;
+    background-color: white;
+  }
+
+  .pengeluaran-form button:hover {
+    width: 100%;
+    font-size: 14px;
+    padding: 8px;
+    color: rgb(255, 255, 255);
+    background-color: #606060;
+  }
+  /* Total Keseluruhan */
+  .total-keseluruhan {
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+    z-index: -2;
+  }
+
+  /* Daftar Pengeluaran */
+  .pengeluaran-list h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .pengeluaran-list ul {
+    padding-left: 20px;
+    font-size: 14px;
+  }
+
+  /* Popup Konfirmasi */
+  .konfirmasi-popup {
+    width: 95%;
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .konfirmasi-popup button {
+    width: 100%;
+    padding: 8px;
+  }
+}

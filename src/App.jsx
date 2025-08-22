@@ -12,9 +12,11 @@ import UangKas from "./pages/UangKas";
 import Jadwal from "./pages/Jadwal";
 import Profil from "./pages/Profil";
 import Background from "./components/Background";
+import Layout from "./components/Layout";
 
 function App() {
   const [count, setCount] = useState(0);
+  const [isBendahara, setIsBendahara] = useState(false);
 
   return (
     <>
@@ -22,19 +24,12 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/profil" element={<Profil />} />
-          <Route path="/uangKas" element={<UangKas />} />
+          <Route path="/uangKas" element={<UangKas isBendahara={isBendahara} setIsBendahara={setIsBendahara} />} />
           <Route path="/album" element={<Album />} />
           <Route path="/jadwal" element={<Jadwal />} />
       </Routes>
       <div
-        style={{
-          width: "50%",
-          height: "600px",
-          marginTop: "-300px",
-          position: "absolute",
-        }}
       >
-      {/*<Background amplitude={3} distance={0} enableMouseInteraction={true} /> */}
       </div>
       <Header />
       <Footer />

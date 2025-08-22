@@ -66,28 +66,63 @@
 .team-card {
   text-align: center;
   max-width: 140px;
+  display: grid;
 }
+
+
+
+.team-card img {
+  width: 100%;         /* memenuhi lebar kartu */
+  height: 100px;       /* tinggi tetap agar grid rapi */
+  object-fit: cover;   /* crop agar proporsional */
+  border-radius: 12px;
+  padding-top: 8px;
+  transition: 0.3s ease-in-out;
+}
+
+.team-card img:hover {
+  transform: scale(1.1);
+
+}
+
 
 .team-card p {
   min-height: 2.5em;
   margin-bottom: 0.5rem;
+  transition: 0.3s ease-in-out;
 }
 
+.team-card p:hover {
+  transform: scale(1.1);
+
+}
+
+
+.team-card p:hover {
+  min-height: 2.5em;
+  margin-bottom: 0.5rem;
+}
 .icons {
+  background-color: white;
   display: flex;
   justify-content: center;
   gap: 10px;
   font-size: 1.5rem;
   margin-top: 0.3rem;
+  padding: 7px 10px 0px 10px;
+  border-radius: 60px;
 }
 .icons a {
-  color: #ffffff;
+  color: #000000;
   text-decoration: none;
   z-index: 1;
   position: relative;
+  transition: 0.3s ease-in-out;
 }
 
 .icons a:hover {
   color: #444;
   cursor: pointer;
+  transform: scale(1.1);
+  transform: TranslateY(-5px);
 }
