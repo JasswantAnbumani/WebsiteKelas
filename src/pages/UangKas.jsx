@@ -6,8 +6,8 @@ import { FaCheck } from "react-icons/fa6";
 import { IoClose } from "react-icons/io5";
 
 
-const API_URL = "http://localhost:5000/api/uangkas";
-const PENGELUARAN_URL = "http://localhost:5000/api/pengeluaran";
+const API_URL = "https://websitekelas-server.onrender.com/api/uangkas";
+const PENGELUARAN_URL = "https://websitekelas-server.onrender.com/api/pengeluaran";
 
 
 const namaMahasiswa = [
@@ -313,3 +313,4 @@ function UangKas({ isBendahara, setIsBendahara }) {
 }
 
 export default UangKas;
+
