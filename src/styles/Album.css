@@ -1,0 +1,191 @@
+
+.album-container {
+  margin-top: 100px;
+  background: transparent;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px #00000026;
+  text-align: center;
+}
+/* Upload Form */
+.upload-form {
+  background: #222;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.upload-form input,
+.upload-form button {
+  margin: 8px;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+}
+
+.upload-form input[type="text"] {
+  width: 200px;
+}
+
+.upload-form button {
+  background: #111111;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.upload-form button:hover {
+  background: #707070;
+}
+
+/* Album List */
+.albums {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.album-card {
+  background: #222;
+  border-radius: 10px;
+  padding: 10px;
+  width: 200px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.album-card:hover {
+  transform: scale(1.05);
+}
+
+.album-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.no-cover {
+  background: #444;
+  height: 120px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Fullscreen View */
+.album-fullscreen {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 10, 10, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  animation: fadeIn 0.4s ease;
+}
+
+.close-btn {
+  position: absolute;
+  top: 140px;
+  right: 20px;
+  background: #e74c3c;
+  border: none;
+  padding: 6px 12px;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.close-btn:hover {
+  background: #c0392b;
+}
+
+.album-left {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.album-preview {
+  max-width: 100%;
+  max-height: 80vh;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.album-right {
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+}
+
+.thumbnails {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.thumb {
+  width: 90px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.thumb:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.thumb.active {
+  border: 2px solid #444;
+  opacity: 1;
+}
+
+/* Login Form */
+.login-form {
+  background: #222;
+  margin: 30px auto;
+  padding: 20px 30px 20px 20px;
+  border-radius: 10px;
+  width: 280px;
+  text-align: center;
+}
+
+.login-form input,
+.login-form button {
+  margin: 8px 0;
+  padding: 8px;
+  border-radius: 6px;
+  width: 100%;
+  border: none;
+}
+
+
+.login-form button {
+  background: #000000;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-left: 8px;
+}
+
+.login-form button:hover {
+  background: #313131;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
