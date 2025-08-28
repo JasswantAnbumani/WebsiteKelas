@@ -1,7 +1,5 @@
 import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -12,7 +10,6 @@ import UangKas from "./pages/UangKas";
 import Jadwal from "./pages/Jadwal";
 import Profil from "./pages/Profil";
 import Background from "./components/Background";
-import Layout from "./components/Layout";
 
 function App() {
   const [count, setCount] = useState(0);

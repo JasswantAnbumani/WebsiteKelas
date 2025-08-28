@@ -66,3 +66,23 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+
+label {
+  position: absolute;
+  left: 13px;
+  top: 13px;
+  background-color: #222222;
+  padding: 0px 5px;
+  font-size: 12px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+input:focus + label {
+  transform: translateY(-20px);
+  color: #444;
+}
+
+input:focus{
+  border-color: black;
+}
